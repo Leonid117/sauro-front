@@ -1,0 +1,727 @@
+@font-face {
+    font-family: 'antonioregular';
+    src: url('fonts/antonio-regular-webfont.eot');
+    src: url('fonts/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/antonio-regular-webfont.woff2') format('woff2'),
+    url('fonts/antonio-regular-webfont.woff') format('woff'),
+    url('fonts/antonio-regular-webfont.ttf') format('truetype'),
+    url('fonts/antonio-regular-webfont.svg#antonioregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeueW01-45Ligh";
+    font-display: fallback;
+    src: url("fonts/HelveticaNeueW01-45Light.woff2") format("woff2"), url("fonts/HelveticaNeueW01-45Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "HelveticaNeueW01-55Roma";
+    font-display: fallback;
+    src: url("fonts/HelveticaNeueW01-55Roman.woff2") format("woff2"), url("fonts/HelveticaNeueW01-55Roman.woff") format("woff")
+}
+
+@font-face {
+    font-family: "HelveticaNeueW01-Thin";
+    font-display: fallback;
+    src: url("fonts/HelveticaNeueW01-Thin.woff2") format("woff2"), url("fonts/HelveticaNeueW01-Thin.woff") format("woff")
+}
+
+@font-face {
+    font-family: "HelveticaNeueW01-75Bold";
+    font-display: fallback;
+    src: url("fonts/HelveticaNeueW01-75Bold.woff2") format("woff2"), url("fonts/HelveticaNeueW01-75Bold.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Bold';
+    src: url('fonts/BrandonGrotesque-Bold.eot');
+    src: url('fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+    url('fonts/BrandonGrotesque-Bold.woff') format('woff'),
+    url('fonts/BrandonGrotesque-Bold.ttf') format('truetype'),
+    url('fonts/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg'),
+    url('fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Knockout';
+    src: url('fonts/Knockout.eot');
+    src: url('fonts/Knockout.woff2') format('woff2'),
+    url('fonts/Knockout.woff') format('woff'),
+    url('fonts/Knockout.ttf') format('truetype'),
+    url('fonts/Knockout.svg#Knockout') format('svg'),
+    url('fonts/Knockout.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html {
+	font-family: 'Knockout';
+	position: relative;
+	background: black;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.overlay {
+	z-index: 2000;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/img/overlay.png') no-repeat center top;
+	opacity: .3;
+	-webkit-transition: opacity .2s;
+	-ms-transition: opacity .2s;
+	transition: opacity .2s;
+}
+
+@media screen and (width:360px) {
+
+	.overlay {
+		background-image: url('/img/overlay2.jpg');
+	}
+
+}
+
+body:hover .overlay {
+	opacity: 0;
+}
+
+header {
+	background: black;
+	height: 73px;
+	width: 100%;
+}
+
+section > .inner {
+	width: 1017px;
+	margin: 0 auto;
+}
+
+section.main {
+	color: #fff;
+	background: url('/img/bg-main.png') no-repeat center 15%;
+	/*background-size: cover;*/
+	height: 530px;
+	width: 100%;
+	padding: 0;
+}
+
+.main h1 {
+	font-size: 86px;
+	font-family: 'Knockout';
+	text-transform: uppercase;
+	line-height: .8;
+	margin-bottom: 20px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.main .inner {
+	position: relative;
+	padding: 73px 0 0 75px;
+	height: 530px;
+}
+.main .down {
+	width: 85px;
+	height: 71px;
+	background: url(/img/down.png) no-repeat center top;
+	position: absolute;
+	bottom: 0;
+	right: 32px;
+}
+.main h1 span.tm {
+	color: black;
+	font-size: 7px;
+	font-family: 'BrandonGrotesque';
+	position: absolute;
+	bottom: -16px;
+	right: 9px;
+}
+.main p {
+	font-family: 'BrandonGrotesque';
+	width: 400px;
+	line-height: 1.4;
+}
+
+
+.main a.watch {
+	margin-top: 24px;
+	color: #fff;
+	background: url('/img/play.png') no-repeat;
+	line-height: 51px;
+	padding-left: 61px;
+	height: 51px;
+	display: inline-block;
+	vertical-align: top;
+	text-transform: uppercase;
+}
+
+
+section h2 {
+	font-family: 'Knockout';
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.ivo {
+	height: 780px;
+	background: url('/img/bg-ivo.png') no-repeat center top;
+	text-align: center;
+	padding-top: 48px;
+}
+.ivo .inner {
+	position: relative;
+}
+.ivo h2 {
+	font-family: 'Knockout';
+	font-size: 35px;
+	text-transform: uppercase;
+}
+.ivo .about {
+	line-height: 1.5;
+  margin: 0 auto;
+  width: 740px;
+  margin-top: 25px;
+  font-family: 'BrandonGrotesque';
+}
+.ivo .jewel {
+	float: right;
+	margin-top: 68px;
+	width: 525px;
+	padding-right: 97px;
+	font-size: 36px;
+	line-height: 1.1;
+}
+.ivo .author {
+	display: block;
+	font-size: 20px;
+}
+.ivo .polaroid {
+	position: absolute;
+	top: 257px;
+	left: 0;
+	background: url('/img/polaroid.png') no-repeat center center;
+	width: 473px;
+	height: 418px;
+}
+
+
+
+
+.golden-horse {
+	color: #fff;
+	position: relative;
+  height: 397px;
+  background: black url(/img/bg-golden-horse.png) no-repeat center top;
+}
+.golden-horse .inner {
+	text-align: center;
+	padding-top: 70px;
+	position: relative;
+	z-index: 100;
+}
+.golden-horse .section-overlay {
+	z-index: 50;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.3);
+}
+.golden-horse p {
+  font-family: 'BrandonGrotesque';
+  line-height: 1.5;
+  width: 500px;
+  margin: 20px auto 0 auto;
+}
+.golden-horse .logo {
+	width: 87px;
+	height: 73px;
+	margin: 33px auto 0 auto;
+	background: url('/img/horse-logo.png') no-repeat center center;
+}
+
+
+
+.craftmanship {
+  height: 630px;
+  background: black url(/img/bg-craftmanship.png) no-repeat center top;
+}
+.craftmanship .inner {
+	text-align: center;
+	padding-top: 60px;
+}
+.craftmanship p {
+	margin: 27px auto 0 auto;
+	width: 700px;
+	font-family: 'BrandonGrotesque';
+	line-height: 1.5;
+}
+
+
+
+.museum {
+  height: 348px;
+  background: black url(/img/bg-museum.png) no-repeat center top;
+}
+.museum > .inner {
+	position: relative;
+  height: 348px;
+}
+.museum .ring {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 737px;
+	height: 440px;
+	background: url(/img/ring.png) no-repeat center top;
+}
+.museum .content {
+	text-align: center;
+	color: #fff;
+	float: right;
+	width: 452px;
+	margin-top: 64px;
+}
+.museum .content p {
+	margin: 15px auto 0 auto;
+	font-family: 'BrandonGrotesque';
+	line-height: 1.5;
+	width: 328px;
+}
+.museum .content a {
+	text-transform: uppercase;
+	margin-top: 27px;
+	color: #d6a76c;
+	display: block;
+	font-size: 15px;
+}
+
+
+
+.location {
+  height: 630px;
+  background: black url(/img/bg-location.png) no-repeat center 70%;
+}
+.location .inner {
+	text-align: center;
+	padding-top: 30px;
+}
+.location .inner p {
+	margin: 27px auto 0 auto;
+	width: 700px;
+	font-family: 'BrandonGrotesque';
+	line-height: 1.5;
+}
+
+
+
+.discover {
+	color: #fff;
+	height: 622px;
+	background: black;
+}
+.discover .inner {
+	padding: 28px;
+}
+.discover .rcol {
+	float: right;
+	width: 464px;
+}
+.discover .lcol {
+	float: left;
+	width: 494px;
+}
+.discover .rcol .content {
+	width: 100%;
+	height: 570px;
+	padding: 100px 0 0 60px;
+	background: url('/img/discover1.png') no-repeat center center;
+}
+.discover .rcol .content h2 {
+	margin-bottom: 28px;
+}
+.discover .rcol .content p {
+	font-family: 'BrandonGrotesque';
+	line-height: 1.5;
+}
+.discover .rcol .content a {
+	margin-top: 24px;
+	color: #d6a76c;
+	font-size: 20px;
+	background: url('/img/play.png') no-repeat;
+	line-height: 51px;
+	padding-left: 61px;
+	height: 51px;
+	display: inline-block;
+	vertical-align: top;
+	text-transform: uppercase;
+}
+
+.discover .big-block {
+	height: 400px;
+	margin-bottom: 3px;
+	background: url('/img/discover2.png') no-repeat center center;
+}
+.discover .small-blocks {
+	height: 169px;
+}
+.discover .small-block1 {
+	height: 167px;
+	width: 240px;
+	display: inline-block;
+	vertical-align: top;
+	background: url('/img/discover3.png') no-repeat center center;
+}
+.discover .small-block2 {
+	height: 167px;
+	width: 251px;
+	display: inline-block;
+	vertical-align: top;
+	background: url('/img/discover4.png') no-repeat center center;
+}
+
+
+.tailoring {
+  height: 680px;
+  background: black url(/img/bg-ivo.png) no-repeat center top;
+}
+.tailoring .inner {
+	text-align: center;
+	padding-top: 35px;
+}
+.tailoring p {
+	margin: 4px auto 0 auto;
+  font-family: 'BrandonGrotesque';
+  line-height: 1.5;
+  font-size: 15px;
+}
+.tailoring .cols {
+	text-align: left;
+	font-size: 0;
+	width: 980px;
+	margin: 42px auto 0 auto;
+}
+.tailoring .cols .col {
+	width: 307px;
+	margin-right: 29px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+.tailoring .cols .col:last-child {
+	margin: 0;
+}
+.tailoring .cols .col img {
+	height: 380px;
+}
+.tailoring .cols .col h4 {
+	font-family: 'Knockout';
+	margin-top: 12px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.tailoring .cols .col p {
+	font-size: 11px;
+	margin-top: 10px;
+}
+.tailoring .cols .col a {
+	text-transform: uppercase;
+	margin-top: 10px;
+	color: #d6a76c;
+	font-size: 15px;
+	display: block;
+}
+
+.responsive {
+	display: none;
+}
+
+
+@media screen and (width:360px) {
+
+	.responsive {
+		display: block;
+	}
+
+	.overlay {
+		background-image: url('/img/overlay2.jpg');
+	}
+
+	section {
+		overflow: hidden;
+	}
+
+	header {
+		height: 60px;
+	}
+
+	section > .inner {
+		width: 100%;
+	}
+
+	.main {
+		height: 434px !important;
+	}
+	.main .inner {
+		height: 434px;
+		width: 100%;
+		padding: 46px 0 0 38px;
+	}
+	.main h1 {
+		margin-bottom: 8px;
+		font-size: 89px;
+	}
+	.main p {
+		width: 252px;
+		line-height: 1.5;
+	}
+	.main a.watch {
+		margin-top: 20px;
+	}
+	.main .down {
+		display: none;
+	}
+
+
+	.ivo {
+		height: 1188px;
+		text-align: left;
+		background: #fff;
+		background-image: none;
+		padding: 37px 25px 0 25px;
+	}
+	.ivo h2 {
+		font-size: 29px;
+	}
+	.ivo .about {
+		width: 97%;
+		margin: 0;
+		margin-top: 14px;
+		font-size: 14px;
+	}
+	.ivo .polaroid {
+		background-size: contain;
+		background-image: url('/img/polaroid2.png');
+		position: static;
+		height: 370px;
+		width: 100%;
+	}
+	.ivo .jewel {
+		width: 100%;
+		margin-top: 20px;
+	  font-size: 25px;
+	  line-height: 1.2;
+	  text-align: center;
+	  padding: 0;
+	}
+	.ivo .jewel .author {
+		margin-top: 40px;
+	}
+
+	.golden-horse {
+		height: 458px;
+	}
+	.golden-horse .inner {
+		text-align: left;
+		padding: 32px 14px 0 20px;
+		font-size: 14px;
+	}
+	.golden-horse p {
+		width: 100%;
+	}
+	.golden-horse .logo {
+		margin: 33px 0 0 0;
+	}
+
+	.craftmanship {
+		background-color: #fff;
+		height: 590px;
+		background-size: contain;
+		background-position: center 336px;
+	}
+	.craftmanship .inner {
+		text-align: left;
+		padding: 32px 12px 0 25px;
+	}
+	.craftmanship p {
+		font-size: 14px;
+		margin-top: 14px;
+		width: auto;
+	}
+
+
+	.museum {
+		height: 343px;
+	}
+	.museum .ring {
+		background-size: contain;
+		width: 808px;
+		height: 478px;
+		left: -182px;
+		bottom: -272px;
+	}
+	.museum .content {
+		width: 100%;
+		margin: 0;
+		text-align: left;
+		padding: 32px 12px 0 25px;
+	}
+	.museum .content p {
+		width: 100%;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.museum .content a {
+		margin-top: 20px;
+	}
+
+
+	.location {
+		height: 433px;
+		background-size: cover;
+		background-position: 0 -23px;
+	}
+	.location .inner {
+		text-align: left;
+		padding: 32px 12px 0 25px;
+	}
+	.location .inner p {
+		width: auto;
+		font-size: 14px;
+		margin-top: 17px;
+	}
+
+	.discover {
+		height: 560px;
+	}
+	.discover .lcol {
+		width: 100%;
+		float: none;
+	}
+	.discover .rcol {
+		display: none;
+	}
+	.discover .big-block {
+		width: 100%;
+		position: relative;
+		background-position: right;
+	}
+	.discover .small-blocks {
+		display: none;
+	}
+	.discover .big-block .play {
+		background: url(/img/play.png) no-repeat center center;
+		background-size: cover;
+		width: 78px;
+		height: 78px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -40px 0 0 -40px;
+	}
+	.discover .m-content  {
+		text-align: center;
+	}
+	.discover .m-content h2 {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.discover .m-content a {
+		color: #d6a76c;
+		margin-top: 10px;
+		text-transform: uppercase;
+		display: block;
+	}
+	.discover .m-content p {
+		font-size: 14px;
+		margin-top: 5px;
+		font-family: 'BrandonGrotesque';
+	}
+
+	.tailoring {
+		background: #fff;
+		height: auto !important;
+		padding-bottom: 20px;
+	}
+	.tailoring .inner {
+		padding: 0;
+		overlow-y: hidden;
+	}
+	.tailoring h2 {
+		margin-top: 27px;
+	}
+	.tailoring p {
+		display: none;
+	}
+	.tailoring .cols {
+		white-space: nowrap;
+		width: 100% !important;
+		margin-top: 18px;
+	}
+	.tailoring .cols .col {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.tailoring .cols .col img {
+		width: 100%;
+		height: auto;
+	}
+	.tailoring .col h4 {
+		display: none;
+	}
+	.tailoring .col p {
+		display: block;
+		font-size: 14px !important;
+	}
+	
+	.tailoring .dots {
+		font-size: 0;
+		margin-top: 20px;
+	}
+	.tailoring .dots .dot {
+		width: 7px;
+		height: 7px;
+		margin-right: 10px;
+		border-radius: 50%;
+		border: 1px solid #d6d6d6;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.tailoring .dots .dot:last-child {
+		margin-right: 0;
+	}
+	.tailoring .dots .dot.active {
+		border: 1px solid #d6a76c;
+		background: #d6a76c;
+	}
+
+}
+
+
+

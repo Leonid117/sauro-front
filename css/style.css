@@ -31,7 +31,7 @@ section h2 { font-family: 'Knockout'; font-size: 35px; text-transform: uppercase
 
 
 /* Main Section */
-.main { color: #fff; background: url('/img/bg-main.png') no-repeat center 15%; background-size: cover; height: 530px; width: 100%; padding: 0; }
+.craftsmanship-index-index .main { color: #fff; background: url('/img/bg-main.png') no-repeat center 15%; background-size: cover; height: 530px; width: 100%; padding: 0; }
 .main h1 { font-size: 86px; font-family: 'Knockout'; text-transform: uppercase; line-height: .8; margin-bottom: 20px; position: relative; display: inline-block; vertical-align: top; }
 .main .inner { position: relative; padding: 73px 0 0 75px; height: 530px; }
 .main .down { width: 85px; height: 71px; background: url(/img/down.png) no-repeat center top; position: absolute; bottom: 0; right: 32px; }

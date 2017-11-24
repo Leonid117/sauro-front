@@ -6,9 +6,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="/css/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/lightbox.min.css">
 	<script src="/js/jquery.min.js"></script>
-	<script src="/js/itemslide.js"></script>
+	<script src="/js/itemslide.min.js"></script>
+	<script src="/js/lightbox.min.js"></script>
 	<title>Document</title>
 
 </head>
@@ -25,8 +28,11 @@
 			<div class="inner">
 				<h1>Ball &amp; <br>a link<span class="tm">tm</span></h1>
 				<p>Discover where it all started. <br>Our fine jewerly is known for its highly precise craftmanship, &amp; innovative designs. Discover the passion behind SAURO.</p>
-				<a href="#" class="watch">Watch now</a>
-				<div class="down"></div>
+				<button class="watch"><i class="fa fa-play" aria-hidden="true"></i>Watch now</button>
+				<button class="down">
+					<span>Scroll down</span>
+					<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+				</button>
 			</div>
 		</section>
 
@@ -39,7 +45,7 @@
 
 				<div class="polaroid"></div>
 
-				<p class="jewel">A jewel does not come from the random encounter of taste, craft, tradition and precious materials, but from the identification of a conceptual mold able to generate boundless sequences of objects. A jewel is the outcome of a continuous process of research, intuition and synthesis. <span class="author">- Ivo Sedazzari</span></p>
+				<p class="jewel"><span class="rotate">,,</span>A jewel does not come from the random encounter of taste, craft, tradition and precious materials, but from the identification of a conceptual mold able to generate boundless sequences of objects. A jewel is the outcome of a continuous process of research, intuition and synthesis. <span class="author">- Ivo Sedazzari</span></p>
 
 			</div>
 		</section>
@@ -90,19 +96,24 @@
 			<div class="inner">
 
 				<div class="lcol">
-					<div class="big-block">
+					<div class="big-block" style="background-image:url('/img/discover2.png');">
+						<a data-lightbox="gallery" href="/img/discover2.png"></a>
 						<div class="play responsive"></div>
 					</div>
 					<div class="small-blocks">
-						<div class="small-block1"></div>
-						<div class="small-block2"></div>
+						<div class="small-block1" style="background-image:url('/img/discover3.png');">
+							<a data-lightbox="gallery" href="/img/discover3.png"></a>
+						</div>
+						<div class="small-block2" style="background-image:url('/img/discover4.png');">
+							<a data-lightbox="gallery" href="/img/discover4.png"></a>
+						</div>
 					</div>
 				</div>
 				<div class="rcol">
 					<div class="content">
 						<h2>DISCOVER SAURO <br>CRAFTSMANSHIP</h2>
 						<p>Discover where it all started. <br>Our fine jewelry is known for its <br>highly precise craftsmanship, &amp; innovative designs. <br>Discover the passion behind SAURO.</p>
-						<a href="#">Watch now</a>
+						<button class="watch"><i class="fa fa-play" aria-hidden="true"></i>Watch now</button>
 					</div>
 				</div>
 
